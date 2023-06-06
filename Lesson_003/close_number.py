@@ -25,3 +25,16 @@ def close_number(arr,a):
         print(num1)
 
 close_number(list_2,9)
+
+# Во 2 задаче, учитывая тему занятия, проще всего было пройтись по списку циклом и посмотреть модуль разницы числа и введенного числа:
+# from teacher:
+list_2 = [10, 5, 7, 3, 3, 2, 5, 7, 3, 8]
+x = 6
+min_diff = list_2[0]
+el = None
+for num in list_2:
+    if abs(num - x) < min_diff:
+        print(min_diff)
+        min_diff = abs(num - x)
+        el = num
+print(min_diff, el)
