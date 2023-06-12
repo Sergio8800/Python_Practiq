@@ -29,3 +29,22 @@ def recur_function(a, b):
 
 print("только так смог решить сумму двух любых чисел")
 recur_function(5, 15)
+
+
+def sum(a, b):
+    return (sum(a + 1, b - 1) if b else a)
+
+print(sum(5,2))
+
+
+def summa(a, b):
+    a += 1
+    b -= 1
+    print(a,b)
+    if b > 0:
+        return summa(a, b)
+    else:
+        return a
+
+print(summa(3, 5))
+
