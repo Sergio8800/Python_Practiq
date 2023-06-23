@@ -14,7 +14,7 @@ lst += ['human'] * 10
 random.shuffle(lst)
 data = pd.DataFrame({'whoAmI':lst})
 # data_ar = ['robot', 'human', np.nan]
-print(df)
+print(data.head())
 df_2 = pd.get_dummies(data)
 print(df_2)
 onehot_encoder = OneHotEncoder(sparse_output=False)
